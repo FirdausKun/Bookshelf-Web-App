@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+nav {
+  background-color: #4cb963;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  color: white;
+}
+nav h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 586px) {
+  nav {
+    padding: 10px;
+  }
+  nav h1 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+/* End Navbar */
+
+/* main section */
+.main-section {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+/* end main section */
+
+/* Add Book */
+.input-books {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.add-book {
+  width: 100vh;
+  border: 2px solid;
+  border-color: #4cb963;
+  border-radius: 10px;
+  padding: 20px 20px;
+  color: #4cb963;
+}
+
+.add-book h2 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.input label {
+  margin-bottom: 5px;
+}
+
+.input input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #4cb963;
+}
+
+.checkbok {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbok input {
+  margin-left: 10px;
+  border: 1px solid;
+  border-color: #4cb963;
+}
+
+#input-book button {
+  padding: 15px 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4cb963;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .add-book {
+    margin-bottom: 20px;
+    width: 85vw;
+  }
+  .add-book button {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .add-book {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .add-book {
+    margin-right: 30px;
+  }
+}
+/* End Add Book */
+
+/* About Books */
+.about-book {
+  width: 100vh;
+  position: relative;
+  border: 2px solid;
+  border-color: #4cb963;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-book {
+    width: 85vw;
+  }
+}
+/* End About Books */
+
+/* info books */
+.info-books {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.info-books div {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 5px;
+  text-align: center;
+  color: white;
+}
+
+.info-books div:first-child {
+  background-color: #157f1f;
+}
+.info-books div:nth-child(2) {
+  background-color: #f94c66;
+}
+.info-books div:last-child {
+  background-color: #4cb963;
+}
+
+@media screen and (max-width: 496px) {
+  .info-books {
+    flex-direction: column;
+  }
+  .info-books div {
+    width: 90%;
+    margin: 5px 0;
+  }
+}
+/* end info books */
+
+/* Search */
+.search-books {
+  text-align: center;
+}
+.search-books h2 {
+  font-weight: 500;
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #4cb963;
+}
+
+.search-books input {
+  width: 60%;
+  padding: 10px 20px;
+  border: 2px solid;
+  border-color: #4cb963;
+  border-radius: 7px;
+}
+
+.search-books button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: #4cb963;
+  color: white;
+}
+
+@media screen and (max-width: 496px) {
+  .search-books input {
+    width: 80%;
+  }
+}
+/* end Search */
+
+/* list books */
+.list-books {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+/* end list books */
+
+/* Uncompleted read list books */
+.uncompletedread {
+  width: 100vh;
+  padding: 20px;
+  border: 2px solid;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-color: #4cb963;
+  color: #4cb963;
+  margin-right: 10px;
+}
+.uncompletedread h2 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.completedread {
+  width: 100vh;
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 10px;
+  border-color: #4cb963;
+  color: #4cb963;
+}
+.completedread h2 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .list-books {
+    flex-direction: column;
+  }
+  .uncompletedread {
+    width: 85vw;
+    margin-right: 0;
+  }
+  .completedread {
+    width: 85vw;
+    margin-right: 0;
+  }
+}
+/* end Uncompleted read list books */
+
+/* Card book */
+.card-book {
+  width: 93vh;
+  border: 2px solid;
+  border-color: #4cb963;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+}
+.card-book h3 {
+  font-weight: 500;
+}
+
+.wrap-btn {
+  padding-top: 15px;
+}
+
+.btn-green {
+  background-color: #4cb963;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.btn-green2 {
+  background-color: #4cb963;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+.btn-red {
+  background-color: #f94c66;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-book {
+    width: 75vw;
+  }
+}
+/* end Card book */
+
+/* Pop Up Delete */
+.parent-dialog {
+  z-index: 10;
+  background-color: white;
+  width: max-content;
+  border: 1px solid;
+  border-color: #4cb963;
+  border-radius: 10px;
+  padding: 20px 30px;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.parent-dialog p {
+  margin-bottom: 20px;
+}
+
+.parent-dialog div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.parent-dialog button {
+  padding: 7px 25px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+}
+
+.parent-dialog button:first-child {
+  background-color: #f94c66;
+  margin-right: 10px;
+}
+
+.parent-dialog button:last-child {
+  background-color: #4cb963;
+}
+
+.background-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.384);
+}
+
+@media screen and (max-width: 586px) {
+  .parent-dialog {
+    width: 80vw;
+  }
+}
+/* end Pop Up Delete */
